@@ -1,0 +1,54 @@
+{
+  "name": "omnistore",
+  "version": "0.1.0",
+  "description": "Immutable state for preact",
+  "license": "MIT",
+  "source": "src/index.js",
+  "module": "build/omnistore.es.js",
+  "main": "build/omnistore.js",
+  "umd:main": "build/omnistore.umd.js",
+  "scripts": {
+    "build": "microbundle -o build",
+    "example": "parcel example/index.html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-preact": "^1.1.0",
+    "flow-bin": "^0.82.0",
+    "immer": "^1.7.2",
+    "jest": "^23.6.0",
+    "microbundle": "^0.6.0",
+    "parcel": "^1.10.1",
+    "preact": "^8.3.1"
+  },
+  "repository": "dannylindquist/omnistore",
+  "author": "Danny Lindquist <dannylindquist@gmail.com>",
+  "peerDependencies": {
+    "immer": "*",
+    "preact": "*"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": true
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "transform-react-jsx",
+        {
+          "pragma": "h"
+        }
+      ]
+    ]
+  }
+}

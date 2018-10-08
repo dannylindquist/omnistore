@@ -1,0 +1,16 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "loose": true,
+        "targets": {
+          "browsers": [">0.5%", "not dead"]
+        }
+      }
+    ],
+    "flow",
+    "preact"
+  ],
+  "plugins": ["transform-class-properties"]
+}
