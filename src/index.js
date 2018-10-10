@@ -2,7 +2,7 @@
 'use strict'
 import produce from 'immer'
 import { Component } from 'preact'
-import { shallowDiffers } from './utils'
+import shallowEquals from 'fbjs/lib/shallowEqual'
 
 // from bey.js
 // https://github.com/jamiebuilds/bey/blob/master/src/bey.js
@@ -45,9 +45,7 @@ function connect(store) {
       let nextState = getState()
       _state = nextState
       if (!_shouldUpdate) return
-      if (!shallowDiffers(prevState, nextState)) {
-        this.setState({})
-      }
+      if (!shallowEquals(prevState, nextState)) this.setState({})
     }
     this.componentDidMount = () => {
       _shouldUpdate = true

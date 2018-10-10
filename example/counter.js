@@ -11,7 +11,7 @@ function Counter() {
 
 function TestComponent() {
   return (
-    <Subscribe on={state => state.count}>
+    <Subscribe on={c => c.count}>
       {count => {
         function increment() {
           mutate(state => {
