@@ -1,6 +1,6 @@
 {
   "name": "omnistore",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Immutable state for preact",
   "license": "MIT",
   "source": "src/index.js",
