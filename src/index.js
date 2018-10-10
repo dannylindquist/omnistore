@@ -16,8 +16,6 @@ function constructStore(initialState) {
       },
       on(listener) {
         listeners.push(listener)
-        //return unsubscribe
-        return () => this.off(listener)
       },
       off(listener) {
         listeners = listeners.filter(fn => fn !== listener)

@@ -1,5 +1,5 @@
 import { h, render } from 'preact'
-import createStore from '../src'
+import createStore from '../build/omnistore'
 
 describe('createStore', () => {
   it('should be instantiable', () => {

@@ -8,6 +8,10 @@
 
 Learning about constructing objects and creating js libraries. Its just another state management solution that may or may not be awful. I'm learning okay!.
 
+I like the idea of having the mutation of the data in the same class/file that it is used for display. We will see how it goes. More of an experiment.
+
+!!!API SUBJECT TO CHANGE!!!
+
 ## Install
 
 ```sh
@@ -52,3 +56,7 @@ function Counter() {
 
 render(<Counter />, window.root)
 ```
+
+## License
+
+MIT License © Danny Lindquist
