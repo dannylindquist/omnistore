@@ -1,4 +1,4 @@
-#omnistore
+# omnistore
 
 > Immutable state for Preact using [Immer](https://github.com/mweststrate/immer)
 
