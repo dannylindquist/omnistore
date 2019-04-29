@@ -2,7 +2,7 @@
 
 > Immutable state for Preact using [Immer](https://github.com/mweststrate/immer)
 
-- Heavily inspired (and highly plagarized from) by [react-copy-write](https://github.com/aweary/react-copy-write, [bey](https://github.com/jamiebuilds/bey), [unistore](https://github.com/developit/unistore)
+- Heavily inspired (and highly plagarized from) by [react-copy-write](https://github.com/aweary/react-copy-write), [bey](https://github.com/jamiebuilds/bey), [unistore](https://github.com/developit/unistore)
 
 ## Purpose
 
